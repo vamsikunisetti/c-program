@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+	char str[10];
+	int i,upcount=0,lwcount=0,digcount=0;
+	printf("enter a string\n");
+	gets(str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(isupper(str[i])) 
+	    	upcount++;
+	    else if(islower(str[i]))
+	        lwcount++;
+	   else if(isdigit(str[i]))
+	        digcount++;
+
+
+	}
+	printf("upper case count is %d\n",upcount);
+	printf("lower case count is %d\n",lwcount);
+	printf("digits count is %d",digcount);
+}
