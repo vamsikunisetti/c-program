@@ -1,0 +1,18 @@
+#include <stdio.h>
+char*evenodd();
+int main()
+{
+    int n;
+    char *ans;
+    printf("enter the number:");
+    scanf("%d",&n);
+    ans=evenodd(n);
+ printf("%s",ans);
+}
+char*evenodd(int n)
+{
+    if(n%2==0)
+   return("even number");
+    else
+    return("odd number");
+}
